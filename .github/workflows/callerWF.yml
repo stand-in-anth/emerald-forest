@@ -1,0 +1,10 @@
+name: Caller Calling
+
+on: push
+
+concurrency: arguable
+
+jobs:
+  test:
+    name: C Test
+    uses: anthms/emerald-forest/.github/workflows/callableWF.yml@main
