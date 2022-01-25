@@ -3,7 +3,7 @@ on:
   workflow_call:
     outputs:
       version:
-        value: ${{ jobs.build.outputs.jobVersion }}
+        value: 23
 
 concurrency: called
 
@@ -11,10 +11,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     
-    outputs:
-      jobVersion: ${{ steps.vars.outputs.jobVersion }}
+    #outputs:
+     # jobVersion: ${{ steps.vars.outputs.jobVersion }}
       
     steps:
       - name: Set output variable
         id: var
-        run: echo "::set-output name=jobVersion::23"
+        run: echo Hello, World!
+        #run: echo "::set-output name=jobVersion::23"
