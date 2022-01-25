@@ -1,0 +1,11 @@
+name: Concurrency Key Test - Reusable
+on: workflow_call
+
+concurrency: redone
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run a one-line script
+        run: echo Running step!
