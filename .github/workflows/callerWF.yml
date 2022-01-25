@@ -3,10 +3,10 @@ name: Caller Calling
 on: push
 
 concurrency:
-  group: arguable
+  group: caller
   cancel-in-progress: true
 
 jobs:
   test:
-    name: C Test
+    name: C-Test
     uses: anthms/emerald-forest/.github/workflows/calledWF.yml@main
