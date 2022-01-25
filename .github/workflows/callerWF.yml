@@ -2,7 +2,9 @@ name: Caller Calling
 
 on: push
 
-concurrency: arguable
+concurrency:
+  group: arguable
+  cancel-in-progress: true
 
 jobs:
   test:
