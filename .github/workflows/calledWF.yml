@@ -1,11 +1,20 @@
-name: Concurrency Key Test - Reusable
-on: workflow_call
+name: Concurrency and Outputs test
+on:
+  workflow_call:
+    outputs:
+      version:
+        value: ${{ jobs.build.outputs.jobVersion }}
 
-concurrency: redone
+concurrency: called
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    outputs:
+      jobVersion: ${{ steps.vars.outputs.jobVersion }}
+      
     steps:
-      - name: Run a one-line script
-        run: echo Running step!
+      - name: Set output variable
+        id: var
+        run: echo "::set-output name=jobVersion::23"
