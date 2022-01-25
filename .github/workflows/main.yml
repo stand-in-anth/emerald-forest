@@ -15,7 +15,7 @@ jobs:
       - run: echo 'Hello, world!'
   assets:
     runs-on: ubuntu-latest
-    if: inputs.assets
+    if: ${{ github.event.inputs.assets }}
     steps:
       - run: echo "assets"
   test:
