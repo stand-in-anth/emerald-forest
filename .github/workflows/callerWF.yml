@@ -2,10 +2,6 @@ name: Caller Calling
 
 on: push
 
-concurrency:
-  group: caller
-  cancel-in-progress: true
-
 jobs:
   test:
     name: CO-Test
