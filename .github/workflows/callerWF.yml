@@ -7,4 +7,4 @@ concurrency: arguable
 jobs:
   test:
     name: C Test
-    uses: anthms/emerald-forest/.github/workflows/callableWF.yml@main
+    uses: anthms/emerald-forest/.github/workflows/calledWF.yml@main
