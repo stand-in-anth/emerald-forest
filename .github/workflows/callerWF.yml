@@ -8,5 +8,5 @@ concurrency:
 
 jobs:
   test:
-    name: C-Test
+    name: CO-Test
     uses: anthms/emerald-forest/.github/workflows/calledWF.yml@main
