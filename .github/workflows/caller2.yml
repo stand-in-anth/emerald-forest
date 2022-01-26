@@ -4,4 +4,4 @@ on: pull_request
 
 jobs:
   test:
-    uses: ./.github/workflows/calledWF.yml
+    uses: anthms/emerald-forest/.github/workflows/calledWF.yml@branch2
