@@ -1,0 +1,7 @@
+name: Caller2
+
+on: pull_request
+
+jobs:
+  test:
+    uses: ./.github/workflows/calledWF.yml
