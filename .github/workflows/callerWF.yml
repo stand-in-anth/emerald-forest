@@ -5,4 +5,4 @@ on: [pull_request, push]
 jobs:
   test:
     name: CO-Test
-    uses: ./.github/workflows/calledWF.yml
+    uses: anthms/emerald-forest/.github/workflows/calledWF.yml@main
