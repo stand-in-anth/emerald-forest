@@ -1,8 +1,8 @@
 name: Caller Calling
 
-on: push
+on: pull_request
 
 jobs:
   test:
     name: CO-Test
-    uses: anthms/emerald-forest/.github/workflows/calledWF.yml@main
+    uses: ./.github/workflows/calledWF.yml
