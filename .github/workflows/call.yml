@@ -4,4 +4,4 @@ on: pull_request
 
 jobs:
   test:
-    uses: anthms/emerald-forest/.github/workflows/called.yml@main
+    uses: anthms/emerald-forest/.github/workflows/called.yml@edit-reusable
