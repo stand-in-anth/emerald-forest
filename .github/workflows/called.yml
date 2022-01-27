@@ -1,4 +1,4 @@
-name: Called
+name: Called - Updated
 
 on: workflow_call
 
@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo Hello
+        run: echo This is the updated reusable workflow
