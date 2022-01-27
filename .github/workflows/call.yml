@@ -1,0 +1,7 @@
+name: Call
+
+on: pull_request
+
+jobs:
+  test:
+    uses: anthms/emerald-forest/.github/workflows/called.yml@main
