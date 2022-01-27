@@ -4,4 +4,4 @@ on: pull_request
 
 jobs:
   test:
-    uses: anthms/emerald-forest/.github/workflows/called.yml@0d5ae313e2902ccbdadab0f3468b5e04b1718a36
+    uses: stand-in-anth/emerald-forest/.github/workflows/called.yml@c9a2b5eff96d49fc93fff08d3fa616b115440066
