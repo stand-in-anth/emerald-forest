@@ -1,4 +1,4 @@
-name: Called - Updated
+name: Called - Fork 2
 
 on: workflow_call
 
@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Run a one-line script
-        run: echo This is the updated reusable workflow
+        run: echo "If it's so good - why is there no . . . wait"
