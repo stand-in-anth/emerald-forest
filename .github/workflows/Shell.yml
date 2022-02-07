@@ -2,6 +2,9 @@ name: ENV in Shell
 
 on: workflow_dispatch
 
+env:
+  SHELL_VAR: bash
+
 jobs:
   job1:
     runs-on: ubuntu-latest
@@ -11,5 +14,5 @@ jobs:
           - shello: bash
           
     steps:
-      - shell: ${{ matrix.shello }}
+      - shell: ${{ env.SHELL_VAR }}
         run: echo "Hello, World"
