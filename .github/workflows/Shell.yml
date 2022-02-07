@@ -1,0 +1,15 @@
+name: ENV in Shell
+
+on: workflow_dispatch
+
+jobs:
+  job1:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - shello: bash
+          
+    steps:
+      - shell: ${{ matrix.shello }}
+        run: echo "Hello, World"
