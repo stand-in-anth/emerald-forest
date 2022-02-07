@@ -14,5 +14,5 @@ jobs:
           - shello: bash
           
     steps:
-      - shell: ${{ env.SHELL_VAR }}
-        run: echo "Hello, World"
+      #- shell: ${{ env.SHELL_VAR }}
+      - run: echo ${{ matrix.shello }}
